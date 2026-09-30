@@ -2,24 +2,38 @@
 
 ## Project Overview
 
-This project focuses on analyzing transaction data using SQL to identify potentially fraudulent transactions and generate useful insights.
+This project analyzes financial transaction data using SQL to identify potentially fraudulent transactions and generate useful business insights.
 
-The project demonstrates practical SQL skills such as data manipulation, filtering, aggregation, grouping, joins, subqueries, and analytical queries.
+The project demonstrates practical SQL skills including database design, data insertion, filtering, aggregation, joins, subqueries, CTEs, CASE statements, and window functions.
 
 ## Objectives
 
 * Analyze transaction data using SQL
-* Identify suspicious or potentially fraudulent transactions
+* Identify potentially fraudulent transactions
 * Analyze transaction patterns
-* Generate business-related insights from the data
+* Identify customers, accounts, and merchants associated with fraud
+* Analyze transaction amounts and payment methods
+* Generate useful insights from transaction data
 * Practice advanced SQL query writing
 
 ## Technologies Used
 
 * SQL
 * MySQL
+* MySQL Workbench
 * Git
 * GitHub
+
+## Database Tables
+
+The project contains the following tables:
+
+* CUSTOMERS
+* ACCOUNTS
+* MERCHANTS
+* LOCATIONS
+* PAYMENT_METHODS
+* TRANSACTIONS
 
 ## SQL Concepts Used
 
@@ -35,36 +49,71 @@ The project demonstrates practical SQL skills such as data manipulation, filteri
 * GROUP BY
 * HAVING
 * Aggregate Functions
-* CASE statements
+* CASE Statements
 * JOINs
 * Subqueries
 * CTEs
 * Window Functions
-* Data filtering and analysis
+* Data Filtering
+* Data Analysis
 
-## Project Structure
+## Project Files
 
 ```text
 Fraud-detection-sql-project/
 │
-├── fraud_detection.sql
+├── schema.sql
+├── data.sql
+├── analysis.sql
 └── README.md
 ```
+
+### schema.sql
+
+Creates the `FRAUD_DETECTION` database and all required tables with primary keys and foreign keys.
+
+### data.sql
+
+Inserts sample customers, accounts, merchants, locations, payment methods, and transaction records.
+
+### analysis.sql
+
+Contains SQL queries used to analyze transactions and identify fraud-related patterns.
 
 ## How to Run
 
 1. Install MySQL.
 2. Open MySQL Workbench or another MySQL client.
-3. Open `fraud_detection.sql`.
-4. Execute the SQL script.
-5. Run the queries to analyze the transaction data and fraud-related patterns.
+3. Open `schema.sql`.
+4. Execute the script to create the database and tables.
+5. Open `data.sql`.
+6. Execute the script to insert the sample data.
+7. Open `analysis.sql`.
+8. Execute the queries to analyze the transaction data.
 
-## Key Learning Outcomes
+## Key Analysis Areas
 
-Through this project, I practiced writing SQL queries for real-world data analysis and improved my understanding of filtering, aggregation, joins, subqueries, and analytical SQL techniques.
+The project analyzes:
+
+* Total transactions
+* Fraudulent transactions
+* Total transaction amount
+* Total fraud amount
+* Average transaction amount
+* Highest and lowest transactions
+* Fraud by account
+* Fraud by merchant
+* Fraud by payment method
+* Customer transaction spending
+* Merchant transaction activity
+* Daily transaction patterns
+* High-value transactions
+* Transaction ranking
+
+## Learning Outcomes
+
+Through this project, I practiced SQL for real-world data analysis, including data filtering, aggregation, joins, subqueries, CTEs, CASE statements, and window functions.
 
 ## Author
 
-Naveen112004
-
-GitHub: https://github.com/Naveen112004
+Naveen
